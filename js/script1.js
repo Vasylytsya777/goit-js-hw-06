@@ -9,10 +9,7 @@ import users from "./users.js"
 const getUserNames = users =>  {
 
 	console.log(users);
-	// твой код  
-
-	 
-	return users.map(user=> user.name)
+ 	return users.map(user=> user.name)
 };
   
 
