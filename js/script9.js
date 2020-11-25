@@ -7,9 +7,7 @@ import users from "./users.js";
 const getNamesSortedByFriendsCount = users => {
 	// твой код
 	return [...users]
-		.sort(({ friends: a }, { friends: b }) => {
-			return a.length - b.length;
-		})
+		.sort((a, b) => a.friends.length - b.friends.length)
 		.map(users => users.name);
 };
 
